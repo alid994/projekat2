@@ -1,0 +1,11 @@
+.selected-lang {
+    cursor: pointer;
+}
+
+.selected-lang:before {
+    content: '';
+    display: block;
+    width: 32;
+    height: 16;
+    background-image: url(flag_us.pgn);
+}

@@ -1,0 +1,458 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,
+ol,ul,li,fieldset,form,label,legend,table,caption,tbody,
+tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,
+figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+nav ul {
+    list-style: none;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+mark {
+    background-color: #ff9;
+    color: #111;
+    font-style: italic;
+    font-weight: bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title],dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+input,select {
+    vertical-align: middle;
+}
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 100px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 16px;
+
+}
+
+header nav ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #111;
+
+}
+
+header .header-cases {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0% 0px 20px;
+        float: left;
+    }
+
+    header nav ul li a {
+        line-height: 60px;
+    }
+
+    header .header-cases {
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        color: #111;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+
+/*index*/
+
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 3px 8px #111;
+}
+
+.index-banner h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 3px 8px #111;
+}
+
+.index-links div {
+    margin: 16px 16px 0px;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-shadow: 2px 3px 8px #111;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .index-banner {
+        height: 450px;
+    }
+
+    .index-banner h1 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+    }
+
+    .index-links {
+        overflow: hidden;
+    }
+
+    .index-links div {
+        margin: 20px 10px 0;
+        height: 230px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+
+    .index-boxlink-square {
+        width: calc(25% - 20px) !important;
+    }
+
+    .index-boxlink-rectangle {
+        width: calc(50% - 20px) !important;
+
+    }
+
+    .index-links div h3 {
+        line-height: 230px;
+    }
+}
+
+/*Products*/
+
+.products-links {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.products-links h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+}
+.products-links .products-link {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0;
+    background-color: #e3e3e3;
+}
+
+.products-links .products-link-studeni {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0;
+    background-image: url(img/studeni_potok1_m.jpg);
+}
+.products-links .products-link-studeni p {
+    padding-top: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #fff 2px 2px 4px;
+}
+
+.products-links .products-link-mostar {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0;
+    background-image: url(img/mostar1_m.jpg);
+}.products-links .products-link-mostar p {
+    padding-top: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #fff 2px 2px 4px;
+}
+
+.products-links .products-link-sarajevo {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0;
+    background-image: url(img/sarajevo1_m.jpg);
+}.products-links .products-link-sarajevo p {
+    padding-top: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #fff 2px 2px 4px;
+}
+
+.products-links .products-link-bihać {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0;
+    background-image: url(img/bihać1_m.jpg);
+}.products-links .products-link-bihać p {
+    padding-top: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #fff 2px 2px 4px;
+}
+
+.products-links .products-link p {
+    padding-top: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*CASE*/
+
+.product-vid h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-vid video {
+    display: block;
+    margin: 10 auto 10 auto;
+    padding: 30 0;
+    width: 720px;
+    height: 540px;
+}
+
+.product-vid article h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.product-vid article div p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #111;
+    text-transform: uppercase;
+    column-count: 3;
+    column-gap: 30px;
+}
+
+/*CONTACT*/
+
+.contact {
+    width: 100%;
+    height: 100px;
+    background-image: url(img/sarajevo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.contact-info {
+    padding: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 3px 8px #111;
+}
+
+/*FOOTER*/
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    list-style: none;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.footer-sm {
+    width: 60px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
